@@ -7,8 +7,8 @@ class CourseDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
-        var textAlignment = sizingInformation.deviceScreenType == DeviceScreenType.desktop
-            ? TextAlign.left : TextAlign.center;
+        var textAlignment =
+            sizingInformation.deviceScreenType == DeviceScreenType.desktop ? TextAlign.left : TextAlign.center;
         double titleSize = sizingInformation.deviceScreenType == DeviceScreenType.mobile ? 50 : 80;
         double descriptionSize = sizingInformation.deviceScreenType == DeviceScreenType.mobile ? 16 : 21;
 
@@ -19,7 +19,7 @@ class CourseDetails extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'FLUTTER WEB.\nTHE BASICS',
+                'The Academy.\nOnline Courses',
                 style: TextStyle(fontSize: titleSize, fontWeight: FontWeight.w800, height: 0.9),
                 textAlign: textAlignment,
               ),
@@ -27,7 +27,8 @@ class CourseDetails extends StatelessWidget {
                 height: 30,
               ),
               Text(
-                'This tutorial is the first in a series that will go over all the basics for creating a website in Flutter.',
+                'It\'s the perfect space where you can start your IT career. '
+                'We can teach and support you in every step to become a professional in the industry.',
                 style: TextStyle(fontSize: descriptionSize, height: 1.7),
                 textAlign: textAlignment,
               )

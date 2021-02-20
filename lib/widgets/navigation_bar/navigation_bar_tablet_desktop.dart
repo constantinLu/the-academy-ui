@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_academy/constants/tabs.dart';
 import 'package:the_academy/route/route_type.dart';
 
 import 'navbar_item.dart';
@@ -17,11 +18,27 @@ class NavigationBarTabletDesktop extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                NavBarItem("Episodes", EpisodesRoute),
+                NavBarItem(HOME_LABEL, HomeRoute),
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem("About", AboutRoute),
+                NavBarItem(COURSE_LABEL, CoursesRoute),
+                SizedBox(
+                  width: 60,
+                ),
+                NavBarItem(TRAINER_LABEL, TrainerRoute),
+                SizedBox(
+                  width: 60,
+                ),
+                NavBarItem(CAMPUS_LABEL, CampusRoute),
+                SizedBox(
+                  width: 60,
+                ),
+                NavBarItem(CONTACT_LABEL, ContactRoute),
+                SizedBox(
+                  width: 60,
+                ),
+                NavBarItem(PROFILE_LABEL, ProfileRoute),
                 SizedBox(
                   width: 60,
                 ),

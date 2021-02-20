@@ -30,7 +30,9 @@ dependencies:
   cupertino_icons: ^1.0.1
   responsive_builder: ^0.3.0
   get_it:
-  provider:
+  provider: ^4.3.3
+  intl: ^0.16.1
+  http: ^0.12.2
 
 dev_dependencies:
   flutter_test:

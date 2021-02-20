@@ -19,7 +19,7 @@ class CallToActionTabletDesktop extends StatelessWidget {
         ),
       ),
       decoration: BoxDecoration(
-        color: primaryColor,
+        color: logoColor,
         borderRadius: BorderRadius.circular(5),
       ),
     );
