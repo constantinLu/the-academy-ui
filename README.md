@@ -1,4 +1,13 @@
-# the_academy
+# The Academy
+
+
+# Web view
+![Web view](https://github.com/gizet/the-academy-ui/tree/master/assets/preview/web_view.PNG)
+
+# Mobile View
+![Mobile_view](https://github.com/gizet/the-academy-ui/tree/master/assets/preview/mobile_view.PNG)
+![Mobile_drawer](https://github.com/gizet/the-academy-ui/tree/master/assets/preview/mobile_drawer.PNG)
+
 
 Academy project
 
