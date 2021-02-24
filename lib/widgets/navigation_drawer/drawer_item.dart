@@ -14,7 +14,7 @@ class DrawerItem extends StatelessWidget {
       child: Row(children: [
         Icon(icon),
         SizedBox(width: 30,),
-        NavBarItem(title, navigationPath),
+        NavBarItem(title, navigationPath, null),
       ],),
     );
   }

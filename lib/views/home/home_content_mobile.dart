@@ -8,7 +8,7 @@ class HomeContentMobile extends StatelessWidget {
     return ConstrainedBox(
       constraints: BoxConstraints(
         minHeight: 700,
-            maxWidth: 700,
+        maxWidth: 700,
         maxHeight: 700,
       ),
       child: Column(

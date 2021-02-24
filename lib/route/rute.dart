@@ -4,7 +4,7 @@ import 'package:the_academy/route/route_type.dart';
 import 'package:the_academy/views/campus/campus_view.dart';
 import 'package:the_academy/views/contact/contact_view.dart';
 import 'package:the_academy/views/course/course_view.dart';
-import 'package:the_academy/views/home/home_view/home_view.dart';
+import 'package:the_academy/views/home/home_view.dart';
 import 'package:the_academy/views/profile/profile_view.dart';
 import 'package:the_academy/views/trainer/trainer_view.dart';
 

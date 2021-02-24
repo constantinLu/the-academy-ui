@@ -5,8 +5,10 @@ import 'package:the_academy/service/navigator_service.dart';
 class NavBarItem extends StatelessWidget {
   final String title;
   final String navigationPath;
+  final IconData iconData;
 
-  const NavBarItem(this.title, this.navigationPath);
+
+ NavBarItem(this.title, this.navigationPath, this.iconData);
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +19,9 @@ class NavBarItem extends StatelessWidget {
         locator<NavigationService>().navigateTo(navigationPath);
       },
       // DON`T ever use a service direclty in the uI to change any kind of state
-      child: Text(
+      child: iconData == null ? Text(
       title,
       style: TextStyle(fontSize: 18),
-    ),);
+    ) : Icon(iconData, size: 30));
   }
 }
