@@ -12,7 +12,7 @@ class NavigationBar extends StatelessWidget {
         mobile: NavigationBarMobile(),
         tablet: NavigationBarTabletDesktop(),
         desktop: NavigationBarTabletDesktop(),
-      ).showCursorOnHover,
+      ),
     );
   }
 }

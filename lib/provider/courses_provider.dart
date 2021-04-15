@@ -13,7 +13,12 @@ class CoursesProvider with ChangeNotifier {
 
   Future<void> getCourses() async {
     try {
-      final response = await http.get(GET_URL_LOCAL);
+      Map<String, String> userHeader = {
+        'Access-Control-Allow-Headers': 'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token',
+        'Access-Control-Allow-Methods': 'GET,OPTIONS,POST',
+        'Access-Control-Allow-Origin': '*'
+      };
+      final response = await http.get(GET_URL);
       final coursesData = json.decode(response.body) as List<dynamic>;
       if (coursesData == null) {
         return;

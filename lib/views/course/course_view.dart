@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:the_academy/provider/courses_provider.dart';
 import 'package:the_academy/widgets/course/course_item.dart';
+import 'package:the_academy/extensions/hover_extension.dart';
 
 class CourseView extends StatelessWidget {
   @override
@@ -22,7 +23,7 @@ class CourseView extends StatelessWidget {
             return Consumer<CoursesProvider>(
               builder: (ctx, courseModels, child) => GridView.builder(
                 itemCount: courseModels.course.length,
-                itemBuilder: (ctx, i) => CourseItem(courseModels.course[i]),
+                itemBuilder: (ctx, i) => CourseItem(courseModels.course[i]).moveUpOnHover,
                 // define how the grid should be structured.
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2, childAspectRatio: 3 / 2, crossAxisSpacing: 10, mainAxisSpacing: 10),
